@@ -1,0 +1,133 @@
+/* RESET SCSS */
+@import "reset";
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+// FONT FAMILY
+$font-family:             'Red Hat Display', sans-serif;
+// FONT SIZE
+$font-size-defaut:        16px;
+$font-size-medium:        16px;
+$font-size-title:         28px;
+// FONT WEIGHT
+$font-regular:            500;
+$font-medium:             700;
+$font-bold:               900;
+/* COLORS */
+$primary-color:           hsl(225, 100%, 94%);
+$secondary-color:         hsl(245, 75%, 52%);
+$tertiary-color:          hsl(245, 75%, 53%);
+$blue-pale-color:         hsl(225, 100%, 98%);
+$blue-desaturated-color:  hsl(224, 23%, 55%);
+$blue-dark-color:         hsl(223, 47%, 23%);
+$blue-light-color:        hsl(221, 100%, 94%);
+$white-color:             hsl(0, 0%, 100%);
+$black-color:             hsl(0, 0%, 0%);
+
+body {
+  position: relative;
+  font: $font-size-defaut $font-family;
+  color: $primary-color;
+  background-color: $blue-light-color;
+}
+
+.template {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('../design/desktop-design.jpg');
+  background-repeat: no-repeat;
+  opacity: .85;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: 0 -400px;
+  background-size: 100% 100%;
+}
+
+.card {
+  background-color: $white-color;
+  border-radius: 22px;
+  padding: 220px 30px 30px 30px;
+  max-width: 390px;
+  text-align: center;
+  background-image: url('../images/illustration-hero.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 220px;
+  box-shadow: -2px 11px 41px -4px rgba(114,128,167,0.75);
+
+  &__content {
+    padding: 50px 20px 20px 20px;
+  }
+
+  &__title {
+    font-size: $font-size-title;
+    color: $blue-dark-color;
+    font-weight: $font-bold;
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    color: $blue-desaturated-color;
+    margin-bottom: 25px;
+  }
+
+  &__offer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+    background-color: $blue-pale-color;
+  }
+
+  &__plan {
+    color: $blue-dark-color;
+    font-weight: $font-bold;
+    line-height: $font-size-title;
+    margin-left: 20px;
+    span {
+      display: block;
+      color: $blue-desaturated-color;
+      font-weight: $font-regular;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: $tertiary-color;
+    color: $white-color;
+    font-size: $font-size-medium;
+    font-weight: $font-bold;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    margin: 10px 0;
+    box-shadow: 0px 11px 34px -8px rgba(57,42,225,0.75);
+
+    &--secondary {
+      background-color: transparent;
+      color: $blue-dark-color;
+      box-shadow: none;
+    }
+  }
+}
