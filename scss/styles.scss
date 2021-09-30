@@ -30,17 +30,6 @@ body {
   background-color: $blue-light-color;
 }
 
-.template {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: url('../design/desktop-design.jpg');
-  background-repeat: no-repeat;
-  opacity: .85;
-}
-
 .container {
   display: flex;
   align-items: center;
