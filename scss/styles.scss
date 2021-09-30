@@ -53,6 +53,12 @@ body {
   background-size: 100% 220px;
   box-shadow: -2px 11px 41px -4px rgba(114,128,167,0.75);
 
+  @media (max-width: 420px) {
+    max-width: 320px;
+    padding: 160px 10px 10px 10px;
+    background-size: 100% 160px;
+  }
+
   &__content {
     padding: 50px 20px 20px 20px;
   }
